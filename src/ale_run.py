@@ -13,7 +13,9 @@ import sys
 import os
 import argparse
 
-ROM_PATH = "/home/spragunr/neural_rl_libraries/roms/breakout.bin"
+GLUE_PATH = ""
+ROM_PATH = "/home/zharu/DeepRL/DeepQ/roms/breakout.bin"
+ALE_PATH = "/home/zharu/DeepRL/DeepQ/ale_0.4.4/ale_0_4/"
 
 # Build shift.so if necessary...
 if not os.path.isfile('shift.so'):
@@ -29,8 +31,8 @@ my_env["RLGLUE_PORT"] = args.glue_port
 
 
 # Start the necessary processes:
-p1 = subprocess.Popen(['rl_glue'], env=my_env)
-p2 = subprocess.Popen('ale -game_controller rlglue -frame_skip 4 '+ ROM_PATH,
+p1 = subprocess.Popen([GLUE_PATH + 'rl_glue'], env=my_env)
+p2 = subprocess.Popen(ALE_PATH + 'ale -game_controller rlglue -frame_skip 4 '+ ROM_PATH,
                       shell=True, env=my_env)
 p3 = subprocess.Popen(['./rl_glue_ale_experiment.py'], env=my_env)
 p4 = subprocess.Popen(['./rl_glue_ale_agent.py'] + sys.argv[1:], env=my_env)

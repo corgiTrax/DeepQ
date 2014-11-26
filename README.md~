@@ -24,9 +24,6 @@ Required packages
 Required changes:
 1. cd src && vi ale_run.py
 change ROM, ALE, GLUE paths to be your own locations
-GLUE path should be like /u/[usrname]/lib/bin/rl_glue
-ALE path should be like /[...]/ale_0.4.4/ale_0_4/ale
-ROM path is wherever you put your rom files
 
 To run the experiment:
 python ale_run.py
