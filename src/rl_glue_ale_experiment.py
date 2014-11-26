@@ -52,6 +52,7 @@ def main():
     parser.add_argument('--test_length', type=int, default=10000,
                         help='Number of steps per test')
     args = parser.parse_args()
+    
 
     RLGlue.RL_init()
 

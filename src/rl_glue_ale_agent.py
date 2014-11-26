@@ -75,7 +75,8 @@ class NeuralAgent(Agent):
                             help='Discount rate')
         parser.add_argument('--phi_length', type=int, default=4,
                             help='History length')
-        parser.add_argument('--max_history', type=int, default=1000000,
+        #Ruohan: default length of history should be 1,000,000
+        parser.add_argument('--max_history', type=int, default=1000,
                             help='Maximum number of steps stored')
         parser.add_argument('--batch_size', type=int, default=32,
                             help='Batch size')

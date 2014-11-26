@@ -272,7 +272,8 @@ def main():
     #test_memory_usage_ok()
     #test_random_chunk()
     #max_size_tests()
-    simple_tests()
+    #simple_tests()
+    pass
 
 if __name__ == "__main__":
     main()
