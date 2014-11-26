@@ -1,0 +1,15 @@
+Universe = vanilla
+Executable = /bin/sh
++ProjectDescription = "Deep q-learning"
++Project = "AI_ROBOTICS"
++Group = "grad"
+Notification = never
+Notify_user = zharu@utexas.edu
+Output     = out.$(Process)
+Error      = err.$(Process)
+Log        = condor.log
+
+num_of_processes=100
+
+Arguments = sample.sh $(Process)
+Queue $(num_of_processes)
