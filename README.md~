@@ -1,13 +1,13 @@
+DeepQ
+=====
+
 Required packages
 1. Cython
 -http://cython.org/#download
-
 2. Theano
 -if later you get an error "cannot import host_from_gpu" you may need to update theano, see http://deeplearning.net/software/theano/install_ubuntu.html.
-
 3. Pylearn2
 -http://deeplearning.net/software/pylearn2/
-
 4. ALE (with replaced controller file)
 -Download ALE at http://www.arcadelearningenvironment.org/downloads/
 -unzip
@@ -18,7 +18,6 @@ Required packages
 
 5. rl-glue core
 -https://code.google.com/p/rl-glue-ext/wiki/RLGlueCore
-
 6. rl-glue python codec
 -https://code.google.com/p/rl-glue-ext/wiki/Python
 
@@ -31,9 +30,7 @@ ROM path is wherever you put your rom files
 
 To run the experiment:
 python ale_run.py
-
 Plot results:
 python plot_results.py [data folder path]/results.csv
-
 Watch performance:
 python ale_run_watch.py [data folder path]/network_file_99.pkl
