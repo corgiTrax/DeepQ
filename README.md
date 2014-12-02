@@ -1,3 +1,5 @@
+Note: this code starts directly from Dr.Nathan Sprague's implementation of DQN. His codebase at https://github.com/spragunr/deep_q_rl.
+
 Required packages
 1. Cython
 -http://cython.org/#download
